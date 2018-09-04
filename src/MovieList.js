@@ -137,12 +137,11 @@ class MovieList extends Component {
 export default MovieList;
 
 const MovieGrid = styled.div`
-  display: grid;
-  margin-top: -40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background: #222;
   padding: 1rem;
-  grid-template-columns: repeat(6, 1fr);
-  grid-row-gap: 1rem;
 `;
 
 const Button = styled.button`

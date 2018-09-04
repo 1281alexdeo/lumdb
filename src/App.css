@@ -13,7 +13,7 @@ body {
   height: 50px;
   padding: 20px;
   color: white;
-  margin: 0 !important;
+  margin-bottom: 0.3rem;
 }
 
 .App-title {

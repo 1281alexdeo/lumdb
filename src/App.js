@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div style={{ position: 'relative' }} className="App-header">
+          <div className="App-header">
             <h1 className="App-title">
               <Link to="/">
                 <img src={logo} alt=" logo" />
