@@ -75,11 +75,6 @@ class MovieList extends Component {
     }
   }
 
-  controls = () => (
-    <div>
-      <h1>hello</h1>
-    </div>
-  );
   render() {
     const { movies, pages, filteredMovies } = this.state;
     let filteredResult = filteredMovies.map(mov => (
@@ -92,8 +87,11 @@ class MovieList extends Component {
       <div className="App">
         <SearchMovie search={this.searchMovies} movies={movies} />
         <div>
-          <MovieGrid>{filteredResult}</MovieGrid>
-          <MovieGrid>{moviedata}</MovieGrid>
+          {filteredMovies.length > 0 ? (
+            <MovieGrid>{filteredResult}</MovieGrid>
+          ) : (
+            <MovieGrid>{moviedata}</MovieGrid>
+          )}
         </div>
 
         <br />

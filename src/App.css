@@ -9,6 +9,7 @@ body {
 }
 
 .App-header {
+  width: 100%;
   background-color: #111;
   height: 50px;
   padding: 20px;
@@ -22,4 +23,11 @@ body {
 
 .App-intro {
   font-size: large;
+}
+
+@media (max-width: 500px) {
+  .App-header,
+  img {
+    display: none;
+  }
 }
